@@ -1,0 +1,7 @@
+results/
+__pycache__/
+*.pyc
+slurm-*.out
+lean/.lake/
+*.egg-info/
+build/

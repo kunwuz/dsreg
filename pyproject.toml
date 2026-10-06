@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dsreg"
+version = "0.1.0"
+description = "DSReg: Dependency-Sparsity Regularization for recovering individual world latents without reconstruction"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["torch", "numpy"]
+
+[project.optional-dependencies]
+experiments = ["scipy", "pandas", "matplotlib"]
+
+[tool.setuptools]
+packages = ["dsreg"]
