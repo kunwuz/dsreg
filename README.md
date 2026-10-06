@@ -1,6 +1,6 @@
 # DSReg
 
-Code for the paper *DSReg: Provably Recovering Individual World Latents without Reconstruction*. Project page: https://kunwuz.github.io/dsreg/
+Code for the paper *DSReg: Provably Recovering Individual World Latents without Reconstruction*. Project page: https://dsreg.github.io/
 
 DSReg (Dependency-Sparsity Regularization) starts from a representation that is identified up to an orthogonal transformation, which LeJEPA provides for Gaussian latent worlds, and selects the rotation under which the observations depend on the fewest latents. When different latents leave distinct dependency footprints on the observations (Structural Diversity), the selected representation recovers each individual world latent up to sign and permutation, with no decoder, reconstruction, or labels.
 
