@@ -1,6 +1,6 @@
 # DSReg
 
-Code for the paper *DSReg: Provably Recovering Individual World Latents without Reconstruction*. Project page: https://dsreg.github.io/
+Code for the paper [*DSReg: Provably Recovering Individual World Latents without Reconstruction*](https://arxiv.org/abs/2610.09457). Project page: https://dsreg.github.io/
 
 DSReg (Dependency-Sparsity Regularization) starts from a representation that is identified up to an orthogonal transformation, which LeJEPA provides for Gaussian latent worlds, and selects the rotation under which the observations depend on the fewest latents. When different latents leave distinct dependency footprints on the observations (Structural Diversity), the selected representation recovers each individual world latent up to sign and permutation, with no decoder, reconstruction, or labels.
 
@@ -65,6 +65,17 @@ python experiments/synthetic/plot.py         # results/synthetic.pdf
 | 14 | 0.524 ± 0.021 | 0.973 ± 0.046 |
 
 We reran all 120 runs with this code and torch 2.5.1 on NVIDIA L40 and L40S GPUs, on two separate clusters. Every run reproduced its record behind the paper bit for bit, and `plot.py` redraws the paper's figure pixel for pixel. Individual runs can come out differently on other GPU models.
+
+## Citation
+
+```bibtex
+@article{zheng2026dsreg,
+  title   = {DSReg: Provably Recovering Individual World Latents without Reconstruction},
+  author  = {Zheng, Yujia and Klindt, David and Balestriero, Randall and Sch{\"o}lkopf, Bernhard},
+  journal = {arXiv preprint arXiv:2610.09457},
+  year    = {2026}
+}
+```
 
 ## Third-party code
 
